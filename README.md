@@ -1,6 +1,14 @@
+
+python app.py
 ## Quick Start (Immediate)
+
+git clone https://github.com/tim3959951/weather_agent.git
+
+cd weather_agent
+
 pip install -r requirements.txt
 
+# Set API keys (provided separately)
 export OPENAI_API_KEY="your_openai_key_here"
 
 export WEATHER_API_KEY="c721b4a6b9b101490c601b0cfda89cdb4cbaab8f0c5f5fb5ba267b94c3a0c65d"
