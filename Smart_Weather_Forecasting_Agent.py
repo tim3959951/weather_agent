@@ -1,5 +1,5 @@
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 os.environ["WEATHER_API_KEY"] = "b9b44f4c0e8949bb95a90524250204"
 #os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 #os.environ["WEATHER_API_KEY"] = os.getenv("WEATHER_API_KEY")
