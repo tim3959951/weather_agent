@@ -1,0 +1,34 @@
+# Gradio
+gradio
+
+# FastAPI and server  
+fastapi
+uvicorn
+python-multipart
+
+# LangChain and AI 
+langchain
+langchain-openai
+openai
+
+# Machine Learning
+xgboost
+scikit-learn
+joblib
+numpy
+
+# Data processing and visualization
+pandas
+matplotlib
+seaborn
+
+# Weather and location
+requests
+geopy
+timezonefinder
+python-dateutil
+
+# Additional utilities
+pydantic
+python-dotenv
+tabulate
