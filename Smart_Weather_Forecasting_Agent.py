@@ -1,6 +1,4 @@
 import os
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-os.environ["WEATHER_API_KEY"] = os.getenv("WEATHER_API_KEY")
 import requests
 import joblib
 import time
@@ -21,7 +19,10 @@ except ImportError:
     from langchain.chat_models import ChatOpenAI
 
 
-
+#os.environ["OPENAI_API_KEY"] = "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"
+#os.environ["WEATHER_API_KEY"] = "b9b44f4c0e8949bb95a90524250204"
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+os.environ["WEATHER_API_KEY"] = os.getenv("WEATHER_API_KEY")
 try:
     llm_gpt4 = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 except Exception:
@@ -30,7 +31,16 @@ except Exception:
     except Exception as e:
         print(f"LangChain initialization failed: {e}")
         llm_gpt4 = None
-        
+print("Loading ML models...")
+try:
+    GLOBAL_MODELS = joblib.load("weather_multi_parameter_models.joblib")
+    GLOBAL_HORIZONS = joblib.load("weather_forecast_horizons.joblib")
+    print("ML models loaded successfully!")
+except:
+    GLOBAL_MODELS = None
+    GLOBAL_HORIZONS = None
+    print("ML models not found, using fallback")
+
 def location_to_timezone(location: str) -> str:
     try:
         geo = Nominatim(user_agent="time_agent_demo")
@@ -361,8 +371,8 @@ def render_text_summary(df: pd.DataFrame, location: str, time_type: str) -> str:
 def predict_weather_fallback(location: str, target_dt: datetime) -> dict:
     try:
         # Load previously trained model and metadata 
-        all_models = joblib.load("weather_multi_parameter_models.joblib")
-        forecast_horizons = joblib.load("weather_forecast_horizons.joblib")
+        all_models = GLOBAL_MODELS
+        forecast_horizons = GLOBAL_HORIZONS
         
         # Get the actual weather of the location as input to the model
         weather_api_key = os.environ.get("WEATHER_API_KEY")
