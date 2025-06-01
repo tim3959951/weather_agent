@@ -19,10 +19,10 @@ except ImportError:
     from langchain.chat_models import ChatOpenAI
 
 
-#os.environ["OPENAI_API_KEY"] = "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"
-#os.environ["WEATHER_API_KEY"] = "b9b44f4c0e8949bb95a90524250204"
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-os.environ["WEATHER_API_KEY"] = os.getenv("WEATHER_API_KEY")
+os.environ["OPENAI_API_KEY"] = "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"
+os.environ["WEATHER_API_KEY"] = "b9b44f4c0e8949bb95a90524250204"
+#os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+#os.environ["WEATHER_API_KEY"] = os.getenv("WEATHER_API_KEY")
 try:
     llm_gpt4 = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 except Exception:
