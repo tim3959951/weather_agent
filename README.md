@@ -35,3 +35,7 @@ export WEATHER_API_KEY="b9b44f4c0e8949bb95a90524250204"
 python ml_predictor.py  # Train ML models for 13-day forecasting
 
 python app.py          # Complete ML-powered experience
+
+After running python app.py, open your browser and go to:
+
+http://localhost:7860
