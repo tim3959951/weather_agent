@@ -154,7 +154,7 @@ def create_interface():
         - Covers any location worldwide (any cities)
         - Historical data (7 days back) to 3-day forecasts
         - Automatically generates charts for time-series data
-        - For extended forecasting with ML models, check the [GitHub repository](https://github.com/your-username/weather-agent)
+        - For extended forecasting with ML models, check the [GitHub repository](https://github.com/tim3959951/weather_agent)
         """)
     
     return demo
