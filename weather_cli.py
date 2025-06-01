@@ -53,11 +53,27 @@ def main():
         chart_files = ["/tmp/weather_chart.png", "weather_chart.png", "./weather_chart.png"]
         for chart_path in chart_files:
             if os.path.exists(chart_path):
-                print(f"\n📊 Chart saved to: {chart_path}")
+                print(f"\n Chart saved to: {chart_path}")
+                
+                # Try to open the chart automatically
+                try:
+                    import platform
+                    system = platform.system()
+                    if system == "Darwin":  # macOS
+                        os.system(f"open '{chart_path}'")
+                        print(" Chart opened automatically on Mac")
+                    elif system == "Windows":  # Windows
+                        os.system(f"start '{chart_path}'")
+                        print(" Chart opened automatically on Windows")
+                    elif system == "Linux":  # Linux
+                        os.system(f"xdg-open '{chart_path}'")
+                        print(" Chart opened automatically on Linux")
+                except Exception:
+                    print(" Tip: You can manually open the chart file to view it")
                 break
                 
     except Exception as e:
-        print(f"❌ Error: {str(e)}")
+        print(f" Error: {str(e)}")
         print("\nTroubleshooting:")
         print("1. Make sure API keys are set correctly")
         print("2. Check your internet connection")
