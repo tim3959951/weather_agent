@@ -65,6 +65,15 @@ python app.py
 
 Access: http://localhost:7860
 
+### CLI Testing (Command Line Interface)
+```bash
+# Test directly in terminal/command prompt
+python weather_cli.py "weather in Tokyo tomorrow"
+python weather_cli.py "3-day forecast for London"
+python weather_cli.py "will it rain in Paris tomorrow at 5pm?"
+```
+
+
 ---
 
 ## Troubleshooting
