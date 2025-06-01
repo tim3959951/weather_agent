@@ -80,7 +80,7 @@ def create_interface():
         gr.Markdown("""
         Ask any questions about weather. The system automatically decides when to show charts or detailed data.
         
-        **Demo limitation:** Next 3 days, last 7 days only. Full version supports 13 days forecast with ML predictions on Github.
+        ** Full version supports 13 days forecast with ML predictions, please make sure you've run python ml_predictor.py to enable full function.
         """)
         
         with gr.Row():
@@ -152,9 +152,9 @@ def create_interface():
         
         **About this demo:**
         - Covers any location worldwide (any cities)
-        - Historical data (7 days back) to 3-day forecasts
+        - Historical data (7 days back) to 13-day forecasts
         - Automatically generates charts for time-series data
-        - For extended forecasting with ML models, check the [GitHub repository](https://github.com/tim3959951/weather_agent)
+        - For details, check the [GitHub repository](https://github.com/tim3959951/weather_agent)
         """)
     
     return demo
