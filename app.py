@@ -97,11 +97,11 @@ def create_interface():
         with gr.Row():
             gr.Examples(
                 examples=[
-                    "Provide a  6-day weather summary for Tokyo ending today.",
-                    "Temperature in New York today",
+                    "Provide a past 6 day weather summary for Tokyo.",
+                    "Humidity in New York today",
                     "Weather forecast for Paris next 2 days", 
                     "Is it good beach weather in Miami tomorrow?",
-                    "Should I bring a jacket to Berlin today?",
+                    "Should I bring a jacket to Berlin the day after tomorrow?",
                     "What's the weather like for the next 3 days in Mumbai",
                     "Summarize last 7 days weather for Nottingham in table format.",
                     "What's the temperature in Taipei from 3pm today to 2am tomorrow?",
