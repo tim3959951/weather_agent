@@ -1,7 +1,7 @@
 # Smart Weather Forecasting AI Agent
 
 ## Live Demo
-**Try it now**: [https://huggingface.co/spaces/your-username/weather-agent](https://huggingface.co/spaces/ChienChung/weather_agent)
+**Try it now**: [weather_agent_web](https://huggingface.co/spaces/ChienChung/weather_agent)
 
 No installation required. Click the link above to test immediately.
 
