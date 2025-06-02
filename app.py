@@ -97,6 +97,7 @@ def create_interface():
         with gr.Row():
             gr.Examples(
                 examples=[
+                    "What's the temperature in Taipei from 3pm today to 2am tomorrow?",
                     "Provide a past 6 day weather summary for Tokyo.",
                     "Humidity in New York today",
                     "Weather forecast for Paris next 2 days", 
@@ -104,7 +105,6 @@ def create_interface():
                     "Should I bring a jacket to Berlin the day after tomorrow?",
                     "What's the weather like for the next 3 days in Mumbai",
                     "Summarize last 7 days weather for Nottingham in table format.",
-                    "What's the temperature in Taipei from 3pm today to 2am tomorrow?",
                     "What was the average temperature in Kaohsiung 5 days ago?",
                     
                         
