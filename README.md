@@ -13,7 +13,7 @@ No installation required. Click the link above to test immediately.
 You need:
 - Python 3.8+ ([download here](https://www.python.org/downloads/))
 - Git ([download here](https://git-scm.com/downloads))
-- OpenAI API key ([get one here](https://platform.openai.com/api-keys))
+- OpenAI API key ([get one here](https://platform.openai.com/api-keys))(enable gpt-4o-mini)
 
 ### Step 1: Download the Code
 ```bash
