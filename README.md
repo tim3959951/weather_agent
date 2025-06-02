@@ -135,3 +135,7 @@ Time           | Temp(°C) | Humidity | Condition
 ```
 
 **Charts:** The system automatically generates visual charts when appropriate.
+
+**Sample Weather Chart:**
+
+![Weather Chart Example](weather_chart.png)
