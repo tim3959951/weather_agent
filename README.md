@@ -30,13 +30,13 @@ pip install -r requirements.txt
 
 **For Windows (Command Prompt):**
 ```cmd
-set OPENAI_API_KEY=your_openai_key_here
+set OPENAI_API_KEY=replace_openai_key_here
 set WEATHER_API_KEY=b9b44f4c0e8949bb95a90524250204
 ```
 
 **For Mac/Linux (Terminal):**
 ```bash
-export OPENAI_API_KEY="your_openai_key_here"
+export OPENAI_API_KEY="replace_openai_key_here"
 export WEATHER_API_KEY="b9b44f4c0e8949bb95a90524250204"
 ```
 
